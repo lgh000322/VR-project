@@ -13,6 +13,7 @@ public class RotateLeftBar : MonoBehaviour
     {
         // 초기 회전 값을 저장합니다.
         originalRotation = transform.eulerAngles.z;
+        Debug.Log("Left=>originalRotation " + originalRotation);
     }
 
     void Update()
@@ -45,6 +46,17 @@ public class RotateLeftBar : MonoBehaviour
             float currentRotation = transform.eulerAngles.z;
             float newRotation = Mathf.MoveTowards(currentRotation, originalRotation, rotationSpeed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, newRotation);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // 회전하는 물체와 공이 충돌한 경우, 회전하는 물체를 적절히 조정하여 겹치지 않도록 함
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
+            Vector2 pushDirection = (collision.transform.position - transform.position).normalized;
+            rb.velocity = pushDirection * rb.velocity.magnitude;
         }
     }
 }
