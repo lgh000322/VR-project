@@ -6,4 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Pinball/Scenes/Main.unity
+    path: Assets/Title.unity
+    guid: f2a3269674992ed4395661dcc584c35b
+  - enabled: 1
+    path: Assets/Option.unity
+    guid: 4a1c4607a52d9a24e885c1ab39235a44
+  - enabled: 1
+    path: Assets/Main.unity
+    guid: e1ed3f6606317b6479a9a012dee9bf50
+  m_configObjects: {}
