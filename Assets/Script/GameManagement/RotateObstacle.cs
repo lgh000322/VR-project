@@ -9,8 +9,7 @@ public class RotateObstacle : MonoBehaviour
     public float rotationSpeed = 30.0f;
     public float z;
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
       
         z += rotationSpeed * Time.deltaTime;

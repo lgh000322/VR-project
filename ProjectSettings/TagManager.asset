@@ -11,6 +11,7 @@ TagManager:
   - RotatingObject
   - Wall
   - RotatingObstacles
+  - Result
   layers:
   - Default
   - TransparentFX

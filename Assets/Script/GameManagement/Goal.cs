@@ -9,7 +9,6 @@ public class Goal : MonoBehaviour
     {
         if(collision.gameObject.tag=="Player")
         {
-            Debug.Log("트리거 감지");
             Destroy(collision.gameObject);
         }
     }

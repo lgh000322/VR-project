@@ -69,6 +69,8 @@
      <Compile Include="Assets\_Pinball\Scripts\Services\Utilities.cs" />
      <Compile Include="Assets\_Pinball\Scripts\UIManager.cs" />
      <Compile Include="Assets\Script\GameManagement\BallAct.cs" />
+     <Compile Include="Assets\Script\GameManagement\ColiderObstacleLeft.cs" />
+     <Compile Include="Assets\Script\GameManagement\ColiderObstacleRight.cs" />
      <Compile Include="Assets\Script\GameManagement\ColliderObstacles.cs" />
      <Compile Include="Assets\Script\GameManagement\EndGame.cs" />
      <Compile Include="Assets\Script\GameManagement\FollowCamera.cs" />

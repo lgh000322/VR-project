@@ -19,7 +19,6 @@ public class EndGame : MonoBehaviour
     void FinishGame()
     {
         isGameEnded = true;
-        Debug.Log("플레이어가 1개 남아 게임이 종료됩니다.");
         Time.timeScale = 0f;
     }
 }

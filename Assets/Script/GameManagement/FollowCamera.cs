@@ -33,7 +33,6 @@ public class FollowCamera : MonoBehaviour
         Transform lowestPlayer = TransformlowestPlayer(playerParent);
         if(playerParent.transform.childCount==1)
         {
-            Debug.Log("플레이어가 1명 남았을 때 카메라 위치 전환.");
             Transform lastPlayer = playerParent.GetChild(0);
             Vector3 targetPosition = new Vector3(lastPlayer.position.x, lastPlayer.position.y, transform.position.z);
             transform.position = targetPosition;
